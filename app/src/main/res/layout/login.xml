@@ -43,7 +43,7 @@
             android:layout_height="35dp"
             android:text="取消"
             android:textColor="@color/colorBlack"
-            android:textSize="15sp"
+            android:textSize="12sp"
             />
 
     </LinearLayout>

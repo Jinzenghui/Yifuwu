@@ -9,10 +9,32 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.biac.yifuwu.MainActivity">
 
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logo"
+        android:scaleType="fitCenter"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:text="翼服务"
+        android:textColor="@color/colorBlack"
+        android:textSize="16pt"
+        />
+
     <EditText
         android:id="@+id/Username"
         android:layout_width="fill_parent"
         android:layout_height="40dip"
+        android:layout_below="@id/title"
         android:layout_marginLeft="30dip"
         android:layout_marginRight="30dip"
         android:layout_marginTop="15dip"
@@ -85,7 +107,7 @@
         android:layout_alignLeft="@id/Username"
         android:layout_alignRight="@id/Username"
         android:layout_marginTop="20dip"
-        android:background="@android:color/holo_blue_bright"
+        android:background="@drawable/enter"
         android:text="登录"
         android:textColor="@android:color/white"
         />
