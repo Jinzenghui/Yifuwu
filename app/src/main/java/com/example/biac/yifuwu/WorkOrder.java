@@ -7,30 +7,33 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
-public class UserHome extends Activity {
+public class WorkOrder extends Activity {
 
-    private Button btn2, btn3, btn4;
+    private Button btn1, btn2, btn3, btn4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_user_home);
+        setContentView(R.layout.activity_work_order);
 
-        View btn1 = findViewById(R.id.button1);
-        BadgeView badge = new BadgeView(this, btn1);
-
-        badge.setTextSize(12);
-        badge.setBadgePosition(BadgeView.POSITION_TOP_RIGHT);
-        badge.setText("10");
-        badge.show();
-
+        btn1 = (Button)findViewById(R.id.newworkorder);
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(UserHome.this, WorkOrder.class);
+                Intent intent = new Intent(WorkOrder.this, PendingOrder.class);
                 startActivity(intent);
             }
         });
+
+        btn4 = (Button)findViewById(R.id.back);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
     }
 }

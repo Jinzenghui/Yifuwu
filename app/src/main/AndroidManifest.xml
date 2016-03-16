@@ -16,7 +16,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".UserHome" />
-        <activity android:name=".login"></activity>
+        <activity android:name=".login" />
+        <activity
+            android:name=".WorkOrder"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_work_order"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".PendingOrder"></activity>
     </application>
 
 </manifest>

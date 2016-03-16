@@ -6,4 +6,11 @@
     <color name="colorPeacockBlue">#33A1C9</color>
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
+
+    <color name="colorCrimson">#DC143C</color>
+    <color name="colorYellow">#FFFF00</color>
+    <color name="colorTurquoise">#40E0D0</color>
+
+
+    <color name="black_overlay">#66000000</color>
 </resources>

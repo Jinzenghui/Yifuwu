@@ -22,11 +22,11 @@ public class login extends Activity {
         progressBar = (ProgressBar)findViewById(R.id.pgBar);
         backButton = (Button)findViewById(R.id.btn_back);
 
-        try{
-            Thread.sleep(2000);
-        }catch(InterruptedException e){
-            e.printStackTrace();
-        }
+//        try{
+//            Thread.sleep(2000);
+//        }catch(InterruptedException e){
+//            e.printStackTrace();
+//        }
 
         Intent intent = new Intent(login.this, UserHome.class);
         startActivity(intent);
