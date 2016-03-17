@@ -28,8 +28,21 @@ public class login extends Activity {
 //            e.printStackTrace();
 //        }
 
-        Intent intent = new Intent(login.this, UserHome.class);
-        startActivity(intent);
+        final Intent intent = new Intent(login.this, UserHome.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try{
+                    Thread.sleep(3000);
+                    startActivity(intent);
+                }catch(InterruptedException e){
+                    e.printStackTrace();
+                }
+            }
+        }).start();
+
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override

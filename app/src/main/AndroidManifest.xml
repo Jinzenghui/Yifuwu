@@ -22,7 +22,8 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_work_order"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".PendingOrder"></activity>
+        <activity android:name=".PendingOrder" />
+        <activity android:name=".OrderDetail"></activity>
     </application>
 
 </manifest>

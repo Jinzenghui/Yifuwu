@@ -2,6 +2,7 @@ package com.example.biac.yifuwu;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -138,6 +139,10 @@ public class PendingOrder extends Activity {
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(PendingOrder.this, OrderDetail.class);
+
+                startActivity(intent);
 
                 Log.i("test", "this is a test!" + position + index);
 
